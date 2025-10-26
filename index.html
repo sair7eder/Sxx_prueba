@@ -4,41 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Gamer 5</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Librería de animaciones AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <h1>🎮 STORE GAMER 5</h1>
-        <input type="text" placeholder="Buscar..." id="buscador" onkeyup="buscar()">
     </header>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Ofertas</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-
-    <div class="titulo">
-        <h2>Accesorios Gamer</h2>
-    </div>
-
     <main>
-        <div class="productos" id="lista-productos"></div>
+        <section id="productos" class="grid"></section>
     </main>
 
-    <div class="carrito" onclick="verCarrito()">
-        🛒 <span id="contador">0</span>
-    </div>
-
-    <footer id="contacto">
-        <h3>Contacto</h3>
-        <p>📧 storegamer5@gmail.com</p>
-        <p>📞+503 7016 2236</p>
-        <p>© 2025 Store Gamer 5</p>
+    <footer>
+        <p>© 2025 Store Gamer 5 - Proyecto escolar</p>
     </footer>
 
-    <script src="/scritp.js"></script>
+    <!-- Script principal -->
+    <script src="script.js"></script>
+
+    <!-- Librería AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
