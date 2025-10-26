@@ -1,25 +1,69 @@
-// Datos de los productos propuestos
+
 const productos = [
-  { nombre: "Teclado Mecánico RGB", precio: 49, imagen: "img/teclado.jpg" },
-  { nombre: "Mouse Gamer 7200 DPI", precio: 25, imagen: "img/mouse.jpg" },
-  { nombre: "Auriculares 7.1", precio: 59, imagen: "img/auriculares.jpg" },
-  { nombre: "Silla Gamer Pro", precio: 199, imagen: "img/silla.jpg" },
-  { nombre: "Monitor Curvo 144Hz", precio: 299, imagen: "img/monitor.jpg" },
-  { nombre: "Alfombrilla RGB", precio: 19, imagen: "img/alfombrilla.jpg" },
-  { nombre: "Micrófono USB Pro", precio: 79, imagen: "img/microfono.jpg" },
+  // PRODUCTOS ACTUALES PROPUESTOs
+  { 
+    nombre: "Control inalámbrico 2.4GHz Bluetooth Gamepad Redragon Juno G818 PS3 PS4 PC Android Luz LED Recargable", 
+    precio: 45, 
+    imagen: "img/Control inalambrico 2.4ghz bluetooth gamepad redragon juno g818 ps3 ps4 pc android luz led recargable.png" 
+  },
+  { 
+    nombre: "Teclado mecánico Redragon Kumara K552RGB-1SP negro switch blue", 
+    precio: 55, 
+    imagen: "img/eclado mecanico redragon kumara k552rgb-1sp black sw blue.png" 
+  },
+  { 
+    nombre: "Kit 2 micrófonos inalámbricos de solapa para smartphone Maono Wave T1 Mini WM622 PC2 USB-C", 
+    precio: 35, 
+    imagen: "img/Kit 2 microfono inalambrico de solapa para smartphone maono wave t1 mini wm622 pc2 usb-c.jpg" 
+  },
+  { 
+    nombre: "Mouse USB Redragon K1ng M724 12.4K DPI 42g negro", 
+    precio: 25, 
+    imagen: "img/Mouse usb redragon k1ng m724 12.4k dpi 42g negro(19.95).png" 
+  },
+  
+  // ESPACIOS PARA 5 PRODUCTOS NUEVOS (ejemplos)
+  { 
+    nombre: "Auriculares Gaming RGB 7.1", 
+    precio: 39, 
+    imagen: "img/auriculares-rgb.jpg" 
+  },
+  { 
+    nombre: "Webcam HD 1080p con micrófono", 
+    precio: 29, 
+    imagen: "img/webcam-hd.jpg" 
+  },
+  { 
+    nombre: "Alfombrilla gamer XL RGB", 
+    precio: 19, 
+    imagen: "img/alfombrilla-xl.jpg" 
+  },
+  { 
+    nombre: "Silla gamer ergonómica", 
+    precio: 149, 
+    imagen: "img/silla-gamer.jpg" 
+  },
+  { 
+    nombre: "Monitor gamer 24'' 144Hz", 
+    precio: 199, 
+    imagen: "img/monitor-144hz.jpg" 
+  }
 ];
 
-// es el Contenedor del HTML donde van los productos
+// Contenedor de HTML donde se alojan productos
 const contenedor = document.getElementById('productos');
 
-// Recorre cada producto y crea la estructura HTML
+// elimina los productos cris 
+contenedor.innerHTML = '';
+
+
 productos.forEach(prod => {
   const div = document.createElement('div');
   div.classList.add('producto');
-  div.setAttribute('data-aos', 'fade-up'); // animación AOS
+  div.setAttribute('data-aos', 'fade-up');
 
   div.innerHTML = `
-    <img src="${prod.imagen}" alt="${prod.nombre}">
+    <img src="${prod.imen}" alt="${prod.nombre}">
     <h3>${prod.nombre}</h3>
     <p>Precio: $${prod.precio}</p>
     <button>Agregar al carrito</button>
