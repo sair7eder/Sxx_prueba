@@ -4,7 +4,7 @@ const productos = [
   { 
     nombre: "Control inalámbrico 2.4GHz Bluetooth Gamepad Redragon Juno G818 PS3 PS4 PC Android Luz LED Recargable", 
     precio: 45, 
-    imagen: "img/Control inalambrico 2.4ghz bluetooth gamepad redragon juno g818 ps3 ps4 pc android luz led recargable.png" 
+    imagen: "https://redragon.es/content/uploads/2024/03/juno-660x520-1.png" 
   },
   { 
     nombre: "Teclado mecánico Redragon Kumara K552RGB-1SP negro switch blue", 
@@ -71,3 +71,4 @@ productos.forEach(prod => {
 
   contenedor.appendChild(div);
 });
+
